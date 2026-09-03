@@ -71,14 +71,6 @@ The library is stored as `library.json` in your OS's app-data folder (Electron's
 `userData` path), so it survives restarts. Removing an item from the library
 does **not** delete the file from your disk.
 
-## Good next steps
-
-- **Discord sign-in** — for per-person profiles. Use OAuth 2.0 with PKCE via the
-  system browser and a loopback redirect; store the token with Electron's
-  `safeStorage`. Do not embed a client secret in the app.
-- **Folder watching** — add a whole folder at once and pick up new files.
-- **Playlists / queues** — play one track after another.
-
 ## Notes
 
 - Playback uses the built-in HTML5 player, which covers MP4 (H.264/AAC) and MP3
